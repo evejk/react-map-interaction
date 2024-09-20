@@ -32,6 +32,7 @@ const MapInteractionCSS = (props) => {
                 transform: transform,
                 transformOrigin: "0 0",
                 transition: "transform 0.3s ease",
+                transitionProperty: "transform",
               }}
             >
               {props.children}
