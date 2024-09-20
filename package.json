@@ -9,7 +9,7 @@
     "test:cover": "nyc ./node_modules/mocha/bin/mocha",
     "dist": "webpack --config webpack.config.js --mode production",
     "dist:dev": "npm run dist && ./copy-to-example.sh",
-    "prepare": "npm run dist",
+    "prepare": "set NODE_OPTIONS=--openssl-legacy-provider && npm run dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
